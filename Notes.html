@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notes App</title>
     <link rel="stylesheet" href="./Notes.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="note-container">
-      <h1>My Notes</h1>
+      <h1><img src="./image/notes.png" alt="notes" />Notes</h1>
+      <button><img src="./image//edit.png" alt="edit" />Create Notes</button>
 
-      <textarea
-        id="note-input"
-        placeholder="write your note here ...."
-      ></textarea>
-
-      <button>Add Note</button>
-
-      <h2>Your Note</h2>
-      <div id="notelist"></div>
+      <div class="noteshow">
+        <p contenteditable="true" class="input-box">
+          <img src="./image/delete.png" alt="delete">
+        </p>
+      </div>
     </div>
 
     <script src="./Notes.js"></script>
