@@ -8,7 +8,7 @@ body {
 
 .note-container {
   padding-left: 7rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .note-container h1 {
@@ -49,7 +49,14 @@ body {
   padding: 20px;
   margin: 20px 0;
   outline: none;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.input-box img {
+  width: 25px;
+  position: absolute;
+  cursor: pointer;
+  right: 15px;
+  bottom: 15px;
+}
