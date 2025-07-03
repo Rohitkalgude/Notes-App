@@ -13,13 +13,12 @@
   <body>
     <div class="note-container">
       <h1><img src="./image/notes.png" alt="notes" />Notes</h1>
-      <button><img src="./image//edit.png" alt="edit" class="edit"/>Create Notes</button>
+      
+      <button id="createbtn">
+        <img src="./image//edit.png" alt="edit" class="editnote"/>Create Notes
+      </button>
 
-      <div class="noteshow">
-        <p contenteditable="true" class="input-box">
-          <img src="./image/delete.png" alt="delete">
-        </p>
-      </div>
+      <div class="noteshow" id="noteshow"></div>
     </div>
 
     <script src="./Notes.js"></script>

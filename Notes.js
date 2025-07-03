@@ -1,5 +1,5 @@
-const createbtn = document.querySelector("button");
-const noteshow = document.querySelector(".noteshow");
+const createbtn = document.getElementById("createbtn");
+const noteContainer = document.getElementById("noteshow");
 
 createbtn.addEventListener("click", () => {
   const newnote = document.createElement("p");
@@ -7,15 +7,20 @@ createbtn.addEventListener("click", () => {
   newnote.contentEditable = "true";
   newnote.innerHTML = `<img src="./image/delete.png" alt="delete" class="delete">`;
 
-  noteshow.appendChild(newnote);
+  noteContainer.appendChild(newnote);
   newnote.focus();
+
+
+  const deleteBtn = newnote.querySelector(".delete");
+
+  deleteBtn.addEventListener("click", () => {
+    newnote.remove();
+  });
+
+
+  newnote.addEventListener("click" , () => {
+    if(newnote.innerText.trim() === "Write someting..."){
+      newnote.innerText = "";
+    }
+  })
 });
-
-
-const deleteBtn = newnote.querySelector(".delete");
-
-deleteBtn.addEventListener("click", () => {
-  newnote.remove();
-});
-
-
